@@ -1,0 +1,197 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: disc;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.hero p {
+  color: white;
+  max-width: 30vw;
+}
+h1 {
+  color: #bc9a6c;
+  font-size: clamp(2px, 5vw, 90px);
+}
+main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .hero {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #1e1e1e;
+  background-image: url(image/bg.png);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+button {
+  padding: 10px 35px 10px 35px;
+}
+.heroButtons {
+  display: flex;
+  width: 100%;
+  gap: 50px;
+}
+#leftButton {
+  background-color: #bc9a6c;
+  border-style: unset;
+  border-color: #bc9a6c;
+  color: white;
+  width: 50%;
+  border-radius: 0;
+}
+#rightButton {
+  background-color: transparent;
+  border-style: solid;
+  color: #bc9a6c;
+  width: 50%;
+  border-color: #bc9a6c;
+  border-radius: 0;
+}
+.hero .left {
+  z-index: 1;
+  display: flex;
+  width: 30vw;
+  flex-direction: column;
+  gap: 30px;
+}
+.hero .right img {
+  width: 25vw;
+  height: 50vh;
+}
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+header {
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2%;
+}
+nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+.navList {
+  display: flex;
+  width: 30vw;
+  justify-content: space-around;
+}
+nav .icons {
+  display: flex;
+}
+
+.Categories,
+.Chief {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 60vh;
+  padding: 10vh;
+}
+.Customers {
+  display: flex;
+}
+.upper h2 {
+  font-size: clamp(30px, 3vw, 80px);
+}
+.Categories .upper,
+.Chief .upper {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Categories .lower {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+}
+.lower .content {
+  width: 40%;
+  height: 100%;
+  display: flex;
+
+  justify-content: space-between;
+  flex-direction: column;
+}
+.lower .content > div {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+.imageFG {
+  width: 40%;
+}
+.imageCafe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Chief .lower {
+  display: flex;
+  justify-content: space-around;
+  gap: 5vw;
+  width: 70%;
+}
+
+.Chief .lower .chield {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Chief .lower .chield img {
+  width: 12vw;
+  height: 12vw;
+}
+.Customers {
+  display: flex;
+  width: 50%;
+  min-height: 50vh;
+  justify-content: center;
+}
+.Customers .left {
+  background-image: url(../image/bg2.png);
+  padding: 0 40px;
+  width: 50%;
+  color: white;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+.Customers .right {
+  background-image: url(../image/cappucino2.png);
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Customers .left img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+footer {
+  background-color: #bc9a6c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
